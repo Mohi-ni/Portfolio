@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Mohini Priyadarshini Sahu - Frontend Developer and Computer Science Engineering Student." />
+  <title>Mohini Priyadarshini Sahu | Creative Frontend Developer</title>
+  
+  <!-- Google Fonts: Syne & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+
+  <!-- Page Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-text">
+      <span>MOHINI</span>
+      <span class="accent-text">PRIYADARSANI</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-mark">MS</span>
+        <span class="logo-text">Mohini S.</span>
+      </a>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- REPLACE LINK WITH YOUR RESUME FILE OR GOOGLE DRIVE LINK -->
+        <a href="resume frontend (1).pdf" target="_blank" class="btn btn-secondary nav-btn">
+          <span>Resume</span>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge fade-up">
+            <span class="badge-dot"></span>
+            Open to Internship Opportunities
+          </div>
+          
+          <h1 class="hero-title fade-up">
+            I build <span class="text-gradient">digital experiences</span> that make an impact.
+          </h1>
+          
+          <div class="hero-author fade-up">
+            <h2>Mohini Priyadarshini Sahu</h2>
+            <p class="hero-subtitle">Frontend Developer & Computer Science Student</p>
+          </div>
+
+          <p class="hero-description fade-up">
+            Passionate about transforming complex ideas into responsive, interactive, and visually stunning web applications. Crafting modern web experiences from Odisha, India.
+          </p>
+
+          <div class="hero-cta fade-up">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span>Let's Connect</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual fade-up">
+          <div class="code-card">
+            <div class="code-card-header">
+              <div class="window-controls">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="window-title">developer.js</span>
+            </div>
+            <div class="code-card-body">
+              <pre><code><span class="kwd">const</span> <span class="var">developer</span> = {
+  <span class="prop">name</span>: <span class="str">"Mohini P. Sahu"</span>,
+  <span class="prop">role</span>: <span class="str">"Frontend Developer"</span>,
+  <span class="prop">education</span>: <span class="str">"B.Tech CSE"</span>,
+  <span class="prop">passions</span>: [<span class="str">"UI/UX"</span>, <span class="str">"Full Stack Developer"</span>, <span class="str">"AI Integrated websites"</span>],
+  <span class="prop">location</span>: <span class="str">"Bhubaneswar, IN"</span>,
+  <span class="prop">status</span>: <span class="str">"Ready for Impact"</span>
+};</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">01 / ABOUT ME</span>
+          <h2 class="section-title">Driven by design, <span class="text-gradient">powered by code.</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image-wrapper">
+            <!-- REPLACE THIS PLACEHOLDER WITH YOUR PHOTO (e.g. assets/profile.jpg) -->
+            <img src="IMG_20230904_143835.jpg" alt="Mohini Priyadarshini Sahu" class="about-img" />
+            <div class="img-accent-border"></div>
+          </div>
+
+          <div class="about-details">
+            <p class="lead-text">
+              I am a Computer Science Engineering student based in Bhubaneswar, Odisha, with a strong focus on crafting functional, aesthetic, and accessible web application interfaces.
+            </p>
+            <p class="body-text">
+              My journey in software development revolves around continuous learning and bridge-building between sleek UI designs and clean frontend engineering. Whether working on college platforms or AI-driven assistants, I emphasize performance, cross-device responsiveness, and clean codebase practices.
+            </p>
+
+            <div class="info-card">
+              <div class="info-row">
+                <span class="info-label"><i class="fa-solid fa-graduation-cap"></i> Degree</span>
+                <span class="info-value">B.Tech in Computer Science & Engineering</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label"><i class="fa-solid fa-location-dot"></i> Location</span>
+                <span class="info-value">Bhubaneswar, Odisha, India</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label"><i class="fa-solid fa-envelope"></i> Email</span>
+                <span class="info-value"><a href="mailto:mohini.sahu.dev@gmail.com">mohine458@gmail.com</a></span>
+              </div>
+            </div>
+
+            <div class="timeline">
+              <h3 class="timeline-heading">Journey Timeline</h3>
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Present</span>
+                  <h4>B.Tech CSE Student final year</h4>
+                  <p>College of Engineering Bhubaneswar (CEB)</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Ongoing</span>
+                  <h4>Working at <a href="https://www.suusri.app/">Suusri Ai</a> as a Fullstack Developer intern</h4>
+                  <p>Building high-performance concepts and real-world web solutions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">02 / SKILLS & TECH</span>
+          <h2 class="section-title">Technical <span class="text-gradient">Toolkit</span></h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fa-solid fa-code"></i>
+              <h3>Frontend Development</h3>
+            </div>
+            <div class="tag-cloud">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">Responsive Web Design</span>
+              <span class="skill-tag">DOM Manipulation</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fa-solid fa-terminal"></i>
+              <h3>Programming & Problem Solving</h3>
+            </div>
+            <div class="tag-cloud">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Algorithmic Logic</span>
+              <span class="skill-tag">Data Fundamentals</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              <h3>Tools & Workflows</h3>
+            </div>
+            <div class="tag-cloud">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Chrome DevTools</span>
+              <span class="skill-tag">Figma basics</span>
+            </div>
+          </div>
+
+          <div class="skill-category focus-category">
+            <div class="category-header">
+              <i class="fa-solid fa-rocket"></i>
+              <h3>Currently Learning & Expanding</h3>
+            </div>
+            <div class="tag-cloud">
+              <span class="skill-tag accent">Advanced JavaScript</span>
+              <span class="skill-tag accent">React.js</span>
+              <span class="skill-tag accent">SQL Databases</span>
+              <span class="skill-tag accent">Data Structures & Algorithms</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">03 / FEATURED PROJECTS</span>
+          <h2 class="section-title">Selected <span class="text-gradient">Works</span></h2>
+        </div>
+
+        <div class="projects-list">
+          
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800" alt="AI Portfolio Generator Preview" />
+            </div>
+            <div class="project-info">
+              <span class="project-number">01</span>
+              <h3 class="project-title">Healthcare website</h3>
+              <p class="project-desc">
+                 A modern, responsive, multi-page hospital website built for the SuuSri AI Week 2 web development task, with separate pages for each section and smooth tab-style transitions between them.
+              </p>
+              <div class="project-problem">
+                <strong>Problem Addressed:</strong> People don't need to stand a long for their reservations 
+              </div>
+              <ul class="project-features">
+                <li><i class="fa-solid fa-check"></i> Interactive forms to know when ur appointment is with the doctor</li>
+                <li><i class="fa-solid fa-check"></i> Pure Client-side architecture with zero build dependencies</li>
+              </ul>
+              <div class="project-stack">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>GSAP + ScrollTrigger</span>
+              </div>
+              <div class="project-links">
+                <!-- EDIT DEMO AND GITHUB LINKS HERE -->
+                <a href="https://pulse-core-healthcare.vercel.app/" class="btn btn-small btn-primary" target="_blank">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/Mohi-ni/Pulse-core-healthcare" class="btn btn-small btn-outline" target="_blank">GitHub <i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800" alt="Student Panel Website Preview" />
+            </div>
+            <div class="project-info">
+              <span class="project-number">02</span>
+              <h3 class="project-title">Ember & Oak</h3>
+              <p class="project-desc">
+                A premium, visual multi-page restaurant website for the SuuSri AI web development task, with a wood-fired bistro identity, a filterable menu, and a reservation system with automatic table assignment.
+              </p>
+              <div class="project-problem">
+                <strong>Problem Addressed:</strong> About the cafe and for reservations on that cafe.
+              </div>
+              <ul class="project-features">
+                <li><i class="fa-solid fa-check"></i> Designed menu with picturesque webpage</li>
+                <li><i class="fa-solid fa-check"></i> Dynamic reservations and perfectly mannered updates.</li>
+              </ul>
+              <div class="project-stack">
+                <span>JavaScript</span><span>REST API</span><span>CSS Grid</span>
+              </div>
+              <div class="project-links">
+                <a href="https://ember-oak-rose.vercel.app/" class="btn btn-small btn-primary" target="_blank">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/Mohi-ni/Ember-Oak" class="btn btn-small btn-outline" target="_blank">GitHub <i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3
+          <article class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=800" alt="Naxatra News Media Website Preview" />
+            </div> -->
+            <!-- <div class="project-info">
+              <span class="project-number">03</span>
+              <h3 class="project-title">Naxatra News Media Website</h3>
+              <p class="project-desc">
+                A digital media presentation platform crafted to stream news articles, video updates, and breaking content in an engaging, editorial layout.
+              </p>
+              <div class="project-problem">
+                <strong>Problem Addressed:</strong> Enhances content readability and structured article browsing across mobile and desktop devices.
+              </div>
+              <ul class="project-features">
+                <li><i class="fa-solid fa-check"></i> Content-first editorial design with high contrast readability</li>
+                <li><i class="fa-solid fa-check"></i> Filterable news category navigation</li>
+              </ul>
+              <div class="project-stack">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-small btn-primary" target="_blank">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#" class="btn btn-small btn-outline" target="_blank">GitHub <i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </article> -->
+
+          <!-- Project 4
+          <article class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=800" alt="Drishti AI Concept Preview" />
+            </div>
+            <div class="project-info">
+              <span class="project-number">04</span>
+              <h3 class="project-title">Drishti AI (Odisha Cultural Assistant)</h3>
+              <p class="project-desc">
+                An innovative concept application designed to assist tourists visiting Odisha with landmark visual recognition insights, regional history, and interactive tourism guidance.
+              </p>
+              <div class="project-problem">
+                <strong>Problem Addressed:</strong> Bridges cultural exploration and modern AI UI patterns for regional tourism enhancement.
+              </div>
+              <ul class="project-features">
+                <li><i class="fa-solid fa-check"></i> Interactive landmark details interface</li>
+                <li><i class="fa-solid fa-check"></i> Cultural discovery pathing & UI prototyping</li>
+              </ul>
+              <div class="project-stack">
+                <span>UI Concept</span><span>JavaScript</span><span>CSS Animations</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-small btn-primary" target="_blank">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#" class="btn btn-small btn-outline" target="_blank">GitHub <i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </article> -->
+          <!--here u can add more projects if u want !-->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Leadership -->
+    <section id="experience" class="experience section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">04 / EXPERIENCE & LEADERSHIP</span>
+          <h2 class="section-title">Roles & <span class="text-gradient">Activities</span></h2>
+        </div>
+
+        <div class="exp-grid">
+          <div class="exp-card">
+            <span class="exp-role-badge">Leadership</span>
+            <h3 class="exp-title">President — E-Cell Elevate</h3>
+            <span class="exp-period">College Entrepreneurship Cell</span>
+            <p class="exp-desc">
+              Leading student initiatives, organizing workshops, and driving entrepreneurial spirit and hackathon events across the campus community.
+            </p>
+          </div>
+
+          <div class="exp-card">
+            <span class="exp-role-badge">Internship</span>
+            <h3 class="exp-title">Fullstack developer Intern</h3>
+            <span class="exp-period">[Provide Dates / Suusri AI</span>
+            <p class="exp-desc">
+              Collaborated on building responsive web user interfaces, implementing expensive  layout structures, and fixing dynamic UI bugs for optimal user experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">05 / ACADEMIC BACKGROUND</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="edu-details">
+            <h3>Bachelor of Technology (B.Tech) in Computer Science & Engineering</h3>
+            <p class="edu-institution">College of Engineering Bhubaneswar (CEB)</p>
+            <span class="edu-dates">Expected Graduation: 2027</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-header">
+            <span class="section-subtitle">06 / GET IN TOUCH</span>
+            <h2 class="contact-title">Have a project in mind? <br/><span class="text-gradient">Let's build something great.</span></h2>
+            <p class="contact-text">
+              I am currently looking for software engineering, Frontend Development and Data Analytics internship opportunities. Feel free to reach out for collaborations or inquiries!
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name" />
+                <span class="error-msg" id="nameError">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+                <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="Opportunities / Inquiry" />
+                <span class="error-msg" id="subjectError">Please enter a subject.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Hello Mohini, I'd like to discuss..."></textarea>
+                <span class="error-msg" id="messageError">Please write a message.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+
+              <div id="formStatus" class="form-status"></div>
+            </form>
+
+            <div class="contact-socials">
+              <h3>Connect Directly</h3>
+              <div class="social-list">
+                <a href="www.linkedin.com/in/mohine-priyadarsani-a73b69276" target="_blank" class="social-item">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <span>LinkedIn Profile</span>
+                </a>
+                <a href="https://github.com/repos" target="_blank" class="social-item">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub Repositories</span>
+                </a>
+                <a href="mailto:mohine458@gmail.com" class="social-item">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>mohine458@gmail.com</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#home" class="logo">Mohini S.</a>
+        <p>&copy; <span id="currentYear"></span> Mohini Priyadarshini Sahu. All rights reserved.</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+          <span>Back to Top</span>
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
